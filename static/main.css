@@ -283,7 +283,7 @@ header {
   margin-top: 2rem;
   font-family: var(--hero-logo-font);
   color: var(--yellow);
-  font-size: clamp(7rem, 8.6vw, 12rem);
+  font-size: clamp(5rem, 5vw, 7rem);
   font-weight: normal;
   text-shadow: 3px 3px 4px #000000;
   z-index: 1;
