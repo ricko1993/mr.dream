@@ -1,120 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Herr+Von+Muellerhoff&family=Montserrat:wght@400;500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="Lush Gelato" />
+    <meta
+      property="og:description"
+      content="A dummy website which delivers ice-creams to your doorstep!!"
+    />
+    <meta property="og:url" content="https://lushgelato.netlify.app/" />
+    <meta property="og:image" content="https://i.imgur.com/vagBfJI.png" />
+    <meta property="og:site_name" content="Lush Gelato" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SrikarVks" />
+    <meta name="twitter:creator" content="@SrikarVks" />
+    <meta name="twitter:title" content="Lush Gelato" />
+    <meta
+      name="twitter:description"
+      content="A dummy website which delivers ice-creams to your doorstep!!"
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/vagBfJI.png" />
+    <meta name="twitter:url" content="https://lushgelato.netlify.app/" />
+    <meta
+      name="description"
+      content="A dummy website which delivers ice-creams to your doorstep!!"
+    />
+    <meta name="author" content="Srikar KSV" />
+    <meta name="keywords" content="ice-cream, dummy, html, css, javascript" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Dream</title>
+    <link
+      rel="shortcut icon"
+      href="{{url_for('static',filename='img/logo_mr.dream.jpg')}}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+  </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Herr+Von+Muellerhoff&family=Montserrat:wght@400;500&family=Poppins&display=swap"
-    rel="stylesheet">
-  <meta property="og:title" content="Lush Gelato">
-  <meta property="og:description" content="A dummy website which delivers ice-creams to your doorstep!!">
-  <meta property="og:url" content="https://lushgelato.netlify.app/">
-  <meta property="og:image" content="https://i.imgur.com/vagBfJI.png">
-  <meta property="og:site_name" content="Lush Gelato">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@SrikarVks">
-  <meta name="twitter:creator" content="@SrikarVks">
-  <meta name="twitter:title" content="Lush Gelato">
-  <meta name="twitter:description" content="A dummy website which delivers ice-creams to your doorstep!!">
-  <meta name="twitter:image" content="https://i.imgur.com/vagBfJI.png">
-  <meta name="twitter:url" content="https://lushgelato.netlify.app/">
-  <meta name="description" content="A dummy website which delivers ice-creams to your doorstep!!">
-  <meta name="author" content="Srikar KSV">
-  <meta name="keywords" content="ice-cream, dummy, html, css, javascript">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MR.DREAM</title>
-  <link rel="shortcut icon" href="{{url_for('static',filename='img/ice-pop-favicon.png')}}" type="image/x-icon">
-  <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
-</head>
+  <body>
+    <div id="hero">
+      <header>
+        <h1 id="logo"><a href="" class="logo__link">Mr.Dream</a></h1>
+        <nav>
+          <ul class="nav">
+            <div class="nav__links">
+              <a href="#main-container" class="nav__item">
+                <li class="nav__item--underline">MENU</li>
+              </a>
+              <a href="#contact" class="nav__item">
+                <li class="nav__item--underline">CONTACT</li>
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero-text">
+        <h3 class="hero-text__heading">Mr.Dream Soft Ice</h3><br>
+        <p class="hero-text__tagline">
+          Kami menjual ice cream lembut dengan beragam rasa dan dengan varian
+          toping yg beragam ada juga minuman kekinian dengan ice cream lembut di
+          atasnya
+        </p>
+      </section>
+    </div>
 
-<body>
-  <div id="hero">
-    <header>
-      <h1 id="logo"><a href="#" class="logo__link"> MR.DREAM </a></h1>
-      <nav>
-        <ul class="nav">
-          <div class="nav__links">
-            <a href="#main-container" class="nav__item ">
-              <li class="nav__item--underline">MENU</li>
-            </a>
-            <a href="#contact" class="nav__item">
-              <li class="nav__item--underline">CONTACT</li>
-            </a>
+    <!--MENU-->
+
+    <main id="main-container">
+      <section class="special-flavours animate-left">
+        <h2 class="special-flavours__heading">MENU</h2>
+        <div class="special-flavours__products-grid">
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220300.jpg')}}"/>
           </div>
-        </ul>
-      </nav>
-    </header>
-    <section id="hero-text">
-      <h2 class="hero-text__heading">MR.DREAM</h2>
-      <p class="hero-text__tagline">Soft ice</p>
-    </section>
-  </div>
 
-<!--MENU-->
-
-  <main id="main-container">
-    <section class="special-flavours animate-left">
-      <h3 class="special-flavours__heading">MENU</h3>
-      <div class="special-flavours__products-grid">
-        <div class="special-flavours__products">
-          <img src="./img/choco_vanilla.webp" alt="Choco vanilla">
-          <div class="special-flavour__content-details">
-            <h4 class="special-flavours__product-name">Choco vanilla</h4>
-            <p class="special-flavours__product-price"><span class="special-flavours__product--oldprice">$7.99</span>
-              $4.99</p>
-            <button class="add-to-cart cartBtn" data-title="Choco vanilla" data-price="4.99"
-              data-img="./img/choco_vanilla.webp" data-quantity=1>Add to cart</button>
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220326.jpg')}}"/>
           </div>
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220351.jpg')}}"/>
+          </div>
+          
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220422.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220523.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220546.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220611.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220638.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220712.jpg')}}"/>
+          </div>
+          
+
+          <div class="special-flavours__products">
+            <img src="{{url_for('static',filename='img/IMG_20210727_220800.jpg')}}"/>
+          </div>
+
         </div>
-        <div class="special-flavours__products">
-          <img src="./img/double-chocolate.webp" alt="Chocolaty mix">
-          <div class="special-flavour__content-details">
-            <h4 class="special-flavours__product-name">Chocolaty mix</h4>
-            <p class="special-flavours__product-price"><span class="special-flavours__product--oldprice">$7.99</span>
-              $4.99</p>
-            <button class="add-to-cart cartBtn" data-title="Chocolaty mix" data-price="4.99"
-              data-img="./img/double-chocolate.webp" data-quantity=1>Add to cart</button>
-          </div>
-        </div>
-        <div class="special-flavours__products">
-          <img src="./img/butterscotch.webp" alt="Butterscotch">
-          <div class="special-flavour__content-details">
-            <h4 class="special-flavours__product-name">Butterscotch</h4>
-            <p class="special-flavours__product-price"><span>$7.99</span> $4.99</p>
-            <button class="add-to-cart cartBtn" data-title="Butterscotch" data-price="4.99"
-              data-img="./img/butterscotch.webp" data-quantity=1>Add to cart</button>
-          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="company-info">
+        <h5>MR.DREAM</h5>
+        <p class="address">
+          Jl. Raya Sumber Jaya Blok AB No.1,<br />
+          Tridaya Sakti, Kec. Tambun Sel., Bekasi, <br />
+          Jawa Barat 17510 <br/>
+
+        </p>
+        <p class="me">Built by Ricko1993</p>
+      </div>
+      <div class="contact" id="contact">
+        <h5>Contact</h5>
+        <div class="contact-links">
+          <a href="https://api.whatsapp.com/message/5CG6P3SU36SMJ1" title="whatsapp" target="_blank"
+            ><i class="fab fa-whatsapp icon"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/mr.dreamsoftice/?hl=id"
+            title="Instagram"
+            target="_blank"
+            ><i class="fab fa-instagram icon"></i
+          ></a>
         </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="company-info">
-      <h5>MR.DREAM</h5>
-      <p class="address">Jl. Raya Sumber Jaya Blok AB No.1,<br>
-        Tridaya Sakti, Kec. Tambun Sel., Bekasi, <br>
-        Jawa Barat 17510</p>
-      <p class="me">Built by Ricko1993</p>
-    </div>
-    <div class="contact" id="contact">
-      <h5>Contact</h5>
-      <div class="contact-links">
-        <a href="https://twitter.com/SrikarVks" title="Twitter" target="_blank"><i class="fab fa-twitter icon"></i></a>
-        <a href="https://github.com/SrikarKSV" title="Github" target="_blank"><i class="fab fa-github icon"></i></a>
-        <a href="https://codepen.io/srikarksv" title="Codepen" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a href="https://www.instagram.com/srikar_vksblurryface/" title="Instagram" target="_blank"><i
-            class="fab fa-instagram icon"></i></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <script src="{{url_for('static',filename='script.js')}}"></script>
-  <!-- Font awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-    crossorigin="anonymous" />
-</body>
-
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </body>
 </html>

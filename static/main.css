@@ -8,7 +8,7 @@
 
 :root {
   --main-font: "Poppins", sans-serif;
-  --hero-logo-font: "Herr Von Muellerhoff", cursive;
+  --hero-logo-font: "Poppins", cursive;
   --heading-font: "Montserrat", sans-serif;
   --main-background-left-color: #332379;
   --main-background-right-color: #5b42ab;
@@ -65,7 +65,7 @@ header {
 }
 
 #hero {
-  background: url(../static/img/hero-bg.jpg) no-repeat;
+  background: url(../static/img/bg.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -893,7 +893,7 @@ footer p {
   color: #1da1f2;
 }
 
-.fa-github:hover,
+.fa-whatsapp:hover,
 .fa-codepen:hover {
   color: #fff;
 }
